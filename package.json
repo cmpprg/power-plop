@@ -7,9 +7,7 @@
   "author": "Ryan Camp <campryan@comcast.net>",
   "license": "MIT",
   "private": false,
-  "bin": {
-    "generate": "./bin/powerPlop.js"
-  },
+  "bin": "./bin/powerPlop.js",
   "dependencies": {
     "plop": "^3.1.1"
   }

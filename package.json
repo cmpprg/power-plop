@@ -4,7 +4,7 @@
   "description": "Tool to make plop js scalable",
   "main": "index.js",
   "repository": "https://github.com/cmpprg/power-plop",
-  "author": "Ryan Camp",
+  "author": "Ryan Camp <campryan@comcast.net>",
   "license": "MIT",
   "private": false
 }

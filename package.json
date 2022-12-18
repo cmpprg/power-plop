@@ -1,0 +1,10 @@
+{
+  "name": "power-plop",
+  "version": "1.0.0",
+  "description": "Tool to make plop js scalable",
+  "main": "index.js",
+  "repository": "https://github.com/cmpprg/power-plop",
+  "author": "Ryan Camp",
+  "license": "MIT",
+  "private": false
+}

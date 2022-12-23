@@ -1,6 +1,6 @@
 import { readdirSync, existsSync } from "node:fs";
 import camelcase from "camelcase";
-import { buildTemplatePathUtils } from "@single_ops/so_build_templates/utils/pathUtils.js";
+import { powerPlopPathUtils } from "../../../../utils/pathUtils.js";
 import { soTemplatePathUtils } from "@single_ops/templates/utils/pathUtils.js";
 import { regexUtils } from "@single_ops/so_template_utils";
 
@@ -38,7 +38,7 @@ export default {
     actions.push({
       type: "add",
       path: soTemplatePathUtils.partialTemplatePath(generatorName, partialName),
-      templateFile: buildTemplatePathUtils.generatorTemplatePath("partial", "partial"),
+      templateFile: powerPlopPathUtils.generatorTemplatePath("partial", "partial"),
     });
 
     // create genrator named dir index if it doesn't already exist
@@ -46,7 +46,7 @@ export default {
       type: "add",
       path: soTemplatePathUtils.partialSubIndexPath(generatorName),
       skipIfExists: true,
-      templateFile: buildTemplatePathUtils.generatorTemplatePath("partial", "partialIndex"),
+      templateFile: powerPlopPathUtils.generatorTemplatePath("partial", "partialIndex"),
     });
 
     //add file read to partial/generatorName dir index file

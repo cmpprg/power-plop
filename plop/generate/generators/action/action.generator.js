@@ -1,6 +1,5 @@
 import camelcase from "camelcase";
-import { existsSync } from "node:fs";
-import { buildTemplatePathUtils } from "@single_ops/so_build_templates/utils/pathUtils.js";
+import { powerPlopPathUtils } from "../../../../utils/pathUtils.js";
 import { soTemplatePathUtils } from "@single_ops/templates/utils/pathUtils.js";
 import { regexUtils } from "@single_ops/so_template_utils";
 
@@ -31,7 +30,7 @@ export default {
     actions.push({
       type: "add",
       path: soTemplatePathUtils.actionPath(name),
-      templateFile: buildTemplatePathUtils.generatorTemplatePath(
+      templateFile: powerPlopPathUtils.generatorTemplatePath(
         generatorName,
         "asyncActionBoilerplate"
       ),
@@ -46,7 +45,7 @@ export default {
     actions.push({
       type: "add",
       path: soTemplatePathUtils.actionPath(name),
-      templateFile: buildTemplatePathUtils.generatorTemplatePath(
+      templateFile: powerPlopPathUtils.generatorTemplatePath(
         generatorName,
         "actionBoilerplate"
       ),

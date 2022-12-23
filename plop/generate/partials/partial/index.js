@@ -1,8 +1,8 @@
 import { readFileSync } from "node:fs";
-import { buildTemplatePathUtils } from "@single_ops/so_build_templates/utils/pathUtils.js";
+import { powerPlopPathUtils } from "../../../../utils/pathUtils.js";
 
 const readFileSyncDeclaration = readFileSync(
-  buildTemplatePathUtils.partialTemplatePath(
+  powerPlopPathUtils.partialTemplatePath(
     "partial",
     "readFileSyncDeclaration"
   ),

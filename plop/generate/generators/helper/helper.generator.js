@@ -1,5 +1,5 @@
 import camelcase from "camelcase";
-import { buildTemplatePathUtils } from "@single_ops/so_build_templates/utils/pathUtils.js";
+import { powerPlopPathUtils } from "../../../../utils/pathUtils.js";
 import { soTemplatePathUtils } from "@single_ops/templates/utils/pathUtils.js";
 import { regexUtils } from "@single_ops/so_template_utils";
 
@@ -22,7 +22,7 @@ export default {
     actions.push({
       type: "add",
       path: soTemplatePathUtils.helperPath(name),
-      templateFile: buildTemplatePathUtils.generatorTemplatePath("helper", "helper"),
+      templateFile: powerPlopPathUtils.generatorTemplatePath("helper", "helper"),
     });
 
     //Add import statement to helper index file

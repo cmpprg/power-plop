@@ -4,10 +4,14 @@
   "description": "Tool to make plop js scalable",
   "main": "index.js",
   "repository": "https://github.com/cmpprg/power-plop",
-  "author": "Ryan Camp <campryan@comcast.net>",
+  "author": {
+    "name": "Ryan Camp",
+    "email": "campryan@comcast.net"
+  },
   "license": "MIT",
   "private": false,
   "type": "module",
+  "keywords": ["node", "cli", "plop", "scalable"],
   "bin": {
     "power-plop-generate": "./bin/generate/index.js",
     "power-plop-initialize": "./bin/initialize/index.js"

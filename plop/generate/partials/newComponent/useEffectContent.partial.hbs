@@ -1,0 +1,23 @@
+  // Similar to componentDidMount:
+  useEffect(() => {
+    //do work
+  }, []);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    //do work
+  });
+
+  // Similar to componentDidUpdate when your watching for changes in a particular variable
+  useEffect(() => {
+    //do work
+  }, [variableName.id]);
+
+  // Similar to componentDidMount with componentWillUnmount(cleanup)
+  // Everything executed in the return function will happen right before unmount
+  useEffect(() => {
+    //do work
+    return () => {
+      //cleanup your work
+    }
+  }, []);

@@ -1,0 +1,29 @@
+// https://plopjs.com/documentation/#getting-started
+
+export default {
+  description: "Say something about the new{{pascalCase name}} generator",
+
+  // https://github.com/SBoudrias/Inquirer.js/#prompt-types
+  prompts: [
+    {
+      // Raw text input
+      type: "input",
+      // Variable name for this input
+      name: "name",
+      // Prompt to display on command line
+      message: "What is the name of your generator?",
+    },
+  ],
+
+  // https://plopjs.com/documentation/#built-in-actions
+  actions: [
+    {
+      // Add a new file
+      type: "add",
+      // Path for the new file root: so_mfes
+      path: "plop/generator/.....",
+      // Handlebars template used to generate content of new file
+      templateFile: "plop/generators/.....",
+    },
+  ],
+};

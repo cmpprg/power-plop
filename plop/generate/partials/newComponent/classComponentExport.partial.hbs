@@ -1,0 +1,12 @@
+{{#if (compare (length reduxForClassComponent) '>=' 1)}}
+  {{#unless (includes reduxForClassComponent 'mapStateToProps')}}
+{{blankLine}}
+export default connect(null, {{reduxForClassComponent}})({{pascalCase name}});
+  {{else}}
+{{blankLine}}
+export default connect({{join ', ' reduxForClassComponent}})({{pascalCase name}});
+  {{/unless}}
+{{else}}
+{{blankLine}}
+export default {{pascalCase name}};
+{{/if}}

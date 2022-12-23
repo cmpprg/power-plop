@@ -77,7 +77,7 @@ const soBuildTemplateRootPath = resolve(
 
 const powerPlopPathUtils = new templatePathUtils(soBuildTemplateRootPath);
 
-export default {
+export {
   templatePathUtils,
   powerPlopPathUtils
 }

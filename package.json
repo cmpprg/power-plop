@@ -11,7 +11,15 @@
   "license": "MIT",
   "private": false,
   "type": "module",
-  "keywords": ["node", "cli", "plop", "scalable"],
+  "keywords": [
+    "node",
+    "cli",
+    "plop",
+    "scalable",
+    "power",
+    "power-plop",
+    "powerPlop"
+  ],
   "bin": {
     "power-plop-generate": "./bin/generate/index.js",
     "power-plop-initialize": "./bin/initialize/index.js"

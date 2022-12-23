@@ -1,5 +1,5 @@
-import newPlopPartialPartials from "./newPlopPartial/index.js";
+import partialPartials from "./partial/index.js";
 
 export default {
-  ...newPlopPartialPartials
+  ...partialPartials
 };

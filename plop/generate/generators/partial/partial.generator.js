@@ -38,7 +38,7 @@ export default {
     actions.push({
       type: "add",
       path: soTemplatePathUtils.partialTemplatePath(generatorName, partialName),
-      templateFile: buildTemplatePathUtils.generatorTemplatePath("newPlopPartial", "newPlopPartial"),
+      templateFile: buildTemplatePathUtils.generatorTemplatePath("partial", "partial"),
     });
 
     // create genrator named dir index if it doesn't already exist
@@ -46,7 +46,7 @@ export default {
       type: "add",
       path: soTemplatePathUtils.partialSubIndexPath(generatorName),
       skipIfExists: true,
-      templateFile: buildTemplatePathUtils.generatorTemplatePath("newPlopPartial", "partialIndex"),
+      templateFile: buildTemplatePathUtils.generatorTemplatePath("partial", "partialIndex"),
     });
 
     //add file read to partial/generatorName dir index file

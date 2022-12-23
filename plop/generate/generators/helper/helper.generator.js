@@ -22,7 +22,7 @@ export default {
     actions.push({
       type: "add",
       path: soTemplatePathUtils.helperPath(name),
-      templateFile: buildTemplatePathUtils.generatorTemplatePath("newPlopHelper", "newPlopHelper"),
+      templateFile: buildTemplatePathUtils.generatorTemplatePath("helper", "helper"),
     });
 
     //Add import statement to helper index file

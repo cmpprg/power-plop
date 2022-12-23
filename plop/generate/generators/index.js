@@ -1,11 +1,11 @@
-import newPlopGenerator from "./newPlopGenerator/newPlopGenerator.generator.js";
-import newPlopAction from "./newPlopAction/newPlopAction.generator.js";
-import newPlopHelper from "./newPlopHelper/newPlopHelper.generator.js";
-import newPlopPartial from "./newPlopPartial/newPlopPartial.generator.js";
+import generator from "./generator/generator.generator.js";
+import action from "./action/action.generator.js";
+import helper from "./helper/helper.generator.js";
+import partial from "./partial/partial.generator.js";
 
 export default {
-  newPlopGenerator,
-  newPlopAction,
-  newPlopHelper,
-  newPlopPartial
+  generator,
+  action,
+  helper,
+  partial
 };

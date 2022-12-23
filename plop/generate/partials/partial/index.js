@@ -3,7 +3,7 @@ import { buildTemplatePathUtils } from "@single_ops/so_build_templates/utils/pat
 
 const readFileSyncDeclaration = readFileSync(
   buildTemplatePathUtils.partialTemplatePath(
-    "newPlopPartial",
+    "partial",
     "readFileSyncDeclaration"
   ),
   "utf8"

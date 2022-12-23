@@ -8,7 +8,7 @@ import {
   HELPER_EXTENSION,
   INDEX_FILE_NAME,
   TEMPLATES_DIR_NAME,
-} from './constants'
+} from './constants.js'
 
 
 class templatePathUtils {

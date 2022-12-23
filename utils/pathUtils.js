@@ -1,4 +1,5 @@
-import { join } from "node:path";
+import { join, dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import {
   GENERATOR_EXTENSION,
   PARTIAL_EXTENSION,
@@ -69,4 +70,14 @@ class templatePathUtils {
   
 }
 
-export default templatePathUtils
+const soBuildTemplateRootPath = resolve(
+  dirname(fileURLToPath(import.meta.url)),
+  ".."
+);
+
+const powerPlopPathUtils = new templatePathUtils(soBuildTemplateRootPath);
+
+export default {
+  templatePathUtils,
+  powerPlopPathUtils
+}

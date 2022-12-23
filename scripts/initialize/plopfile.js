@@ -1,7 +1,7 @@
-import generators from "../templates/plop/generators/index.js";
-import actions from "../templates/plop/actions/index.js";
-import partials from "../templates/plop/partials/index.js";
-import helpers from "../templates/plop/helpers/index.js";
+import generators from "../../plop/initialize/generators/index.js";
+import actions from "../../plop/initialize/actions/index.js";
+import partials from "../../plop/initialize/partials/index.js";
+import helpers from "../../plop/initialize/helpers/index.js";
 
 const setGenerators = (plop) => {
   for (const generator in generators) {

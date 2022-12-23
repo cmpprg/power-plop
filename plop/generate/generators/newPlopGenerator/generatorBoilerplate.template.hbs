@@ -16,14 +16,19 @@ export default {
   ],
 
   // https://plopjs.com/documentation/#built-in-actions
-  actions: [
-    {
+  actions: (answers) => {
+    let actions = [];
+    // const name = answers.name
+
+    actions.push({
       // Add a new file
       type: "add",
-      // Path for the new file root: so_mfes
-      path: "plop/generator/.....",
+      // Path for the new file root: <App name>
+      path: "./someFileStructure",
       // Handlebars template used to generate content of new file
-      templateFile: "plop/generators/.....",
-    },
-  ],
+      templateFile: generatorTemplatePath(),
+    });
+
+    return actions
+  },
 };

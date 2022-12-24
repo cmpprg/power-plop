@@ -23,11 +23,6 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "imports": {
-    "#power-plop": {
-      "./pathUtils": "./utils/pathUtils.js"
-    }
-  },
   "bin": {
     "power-plop-generate": "./bin/generate/index.js",
     "power-plop-initialize": "./bin/initialize/index.js"

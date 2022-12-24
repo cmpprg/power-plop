@@ -20,6 +20,14 @@
     "power-plop",
     "powerPlop"
   ],
+  "scripts": {
+    "test": "jest"
+  },
+  "imports": {
+    "#power-plop": {
+      "./pathUtils": "./utils/pathUtils.js"
+    }
+  },
   "bin": {
     "power-plop-generate": "./bin/generate/index.js",
     "power-plop-initialize": "./bin/initialize/index.js"
@@ -27,5 +35,8 @@
   "dependencies": {
     "camelcase": "^7.0.1",
     "plop": "^3.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
